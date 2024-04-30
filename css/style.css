@@ -1,11 +1,14 @@
-body {margin:0;}
+body {  
+  margin:0;
+  
+}
 
 ul.mainNav {
   list-style-type: none;
   margin: 0;
   padding: 0;
   overflow: hidden;
-  background-color: #333;
+  background-color: black;
   position: fixed;
   top: 0;
 
@@ -25,14 +28,12 @@ ul.mainNav li a {
 }
 
 ul.mainNav li a:hover:not(.active) {
-  background-color: #111;
+  background-color: rgba(255, 255, 255, 0.441);
 }
 
 .active {
-  background-color: #04AA6D;
+  background-color: #E95420;
 }
-
-
 
 
 /* Main content */
