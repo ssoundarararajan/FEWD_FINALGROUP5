@@ -39,7 +39,6 @@ ul.mainNav li a:hover:not(.active) {
 /* Main content */
 .main {
   margin-top: 50px; /* Add a top margin to avoid content overlay */
-  
 }
 
 /* index.html */
@@ -49,9 +48,10 @@ body {background-image: url("/images/background\ img.jpg");
   background-size: cover;}
   
   .os {
-      color: white;
-      font-size: 25;
+      color:rgb(239, 239, 2);
+      font-size: 45px;
       text-align: center;
+      font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   }
   
   .img {float: right;
@@ -59,12 +59,13 @@ body {background-image: url("/images/background\ img.jpg");
   }
   
   .positioncen{
-  
-      position:relative;
+    background-color: #03a89d9c;
+      position: relative;
       width: 70%;
       left: 15%;
       top: 20%;
       padding: 30px;
+      opacity: ;
   }
   .text{
    color:black;}
