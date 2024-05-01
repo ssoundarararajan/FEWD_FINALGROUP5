@@ -41,3 +41,40 @@ ul.mainNav li a:hover:not(.active) {
   margin-top: 50px; /* Add a top margin to avoid content overlay */
   
 }
+
+/* index.html */
+
+
+body {background-image: url("/images/background\ img.jpg");
+  background-size: cover;}
+  
+  .os {
+      color: white;
+      font-size: 25;
+      text-align: center;
+  }
+  
+  .img {float: right;
+      right: 25%;  
+  }
+  
+  .positioncen{
+  
+      position: absolute;
+      width: 70%;
+      left: 15%;
+      top: 20%;
+      padding: 30px;
+  }
+  .text{
+   color:black;}
+  
+  
+  .positioncen h2{
+      color:white;
+      font-size: 25px;
+      font-style: oblique;
+  }
+   .positioncen p{color: rgb(233, 233, 11);
+  font-size: 25px;
+  font-style: oblique;}
