@@ -60,7 +60,7 @@ body {background-image: url("/images/background\ img.jpg");
   
   .positioncen{
   
-      position: absolute;
+      position:relative;
       width: 70%;
       left: 15%;
       top: 20%;
