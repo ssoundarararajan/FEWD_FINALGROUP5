@@ -3,38 +3,7 @@ body {
   
 }
 
-ul.mainNav {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  overflow: hidden;
-  background-color: black;
-  position: fixed;
-  top: 0;
 
-  width: 100%;
-  z-index: 9999999;
-}
-
-ul.mainNav li {
-  float: left;
-}
-
-ul.mainNav li a {
-  display: block;
-  color: white;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-}
-
-ul.mainNav li a:hover:not(.active) {
-  background-color: rgba(255, 255, 255, 0.441);
-}
-
-.active {
-  background-color: #E95420;
-}
 
 
 /* Main content */
@@ -176,41 +145,153 @@ transform: scaleX(-1);}
     color:#E95420;
   }
 
-  
+  /* Navigation Bar */
+/* ------------------------------ */
+ul.mainNav {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: black;
+  position: fixed;
+  top: 0;
+
+  width: 100%;
+  z-index: 9999999;
+}
+
+ul.mainNav li {
+  float: left;
+}
+
+ul.mainNav li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+ul.mainNav li a:hover:not(.active) {
+  background-color: rgba(255, 255, 255, 0.441);
+}
+
+.active {
+  background-color: #E95420;
+}
+
+
+/* Hamburger Nav Bar Classes */
+nav {
+  background-color: #333;
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-list {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+}
+
+.nav-list li {
+  margin-right: 20px;
+}
+
+.nav-list li a {
+  color: white;
+  text-decoration: none;
+}
+
+.menu-toggle {
+  cursor: pointer;
+  display: none; /* Hide the hamburger menu on larger screens */
+}
+
+.bar {
+  display: block;
+  width: 25px;
+  height: 3px;
+  background-color: white;
+  margin: 5px 0;
+}
+
 /* Media Queries */
 
 /* Smartphones (portrait and landscape) ----------- */
+
+/* Reset display property when screen resolution is greater than 768px */
+@media screen and (min-width: 769px) {
+  .nav-list {
+      display: flex;
+  }
+}
+/* --------------- */
+
 @media only screen 
 and (min-device-width : 320px) 
 and (max-device-width : 480px) {
-/* Styles */
+
+
+.menu-toggle {
+    display: block; /* Display the hamburger menu on smaller screens */
+}
 }
 
 /* Smartphones (landscape) ----------- */
 @media only screen 
 and (min-width : 321px) {
-/* Styles */
+
 }
 
 /* Smartphones (portrait) ----------- */
 @media only screen 
 and (max-width : 320px) {
-/* Styles */
+
+
+
+
+
 }
 
-/* iPads (portrait and landscape) ----------- */
+/* iPads (portrait and landscape) ------------------------------------------------------------------------------------------------------------- */    
 @media only screen 
 and (min-device-width : 768px) 
 and (max-device-width : 1024px) {
-/* Styles */
+  .nav-list {
+    display: none; /* Hide the nav links on smaller screens */
+    flex-direction: column;
+    background-color: #333;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    width: 100%;
 }
+
+.nav-list li {
+    margin: 10px 0;
+}
+
+.menu-toggle {
+    display: block; /* Display the hamburger menu on smaller screens */
+}
+
+}
+/* iPads (portrait and landscape) ------------------------------------------------------------------------------------------------------------- */
+
+
+
+
 
 /* iPads (landscape) ----------- */
 @media only screen 
 and (min-device-width : 768px) 
 and (max-device-width : 1024px) 
 and (orientation : landscape) {
-/* Styles */
+
 }
 
 /* iPads (portrait) ----------- */
@@ -218,8 +299,10 @@ and (orientation : landscape) {
 and (min-device-width : 768px) 
 and (max-device-width : 1024px) 
 and (orientation : portrait) {
-/* Styles */
+
+  
 }
+
 
 /* Desktops and laptops ----------- */
 @media only screen 
