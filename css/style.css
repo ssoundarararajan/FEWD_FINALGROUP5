@@ -58,10 +58,18 @@ body {background-image: url("/images/background\ img.jpg");
       font-size: 45px;
       text-align: center;
       font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+      
   }
   
   .img {float: right;
       right: 25%;  
+  }
+  
+  .img2 {
+    text-align: center;
+    margin-left: auto;
+    margin-right:auto;
+    width: 40%;
   }
   
   .positioncen{
