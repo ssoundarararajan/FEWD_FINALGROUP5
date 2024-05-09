@@ -11,7 +11,10 @@ document.addEventListener("DOMContentLoaded", function() {
                             "<li><a href='http://www.suse.com'>SUSE Linux</a></li>" +
                             "<li><a href='https://www.youtube.com/@SwitchedtoLinux'>Switched to Linux</a></li>" +
                             "<li><a href='https://www.youtube.com/@InfinitelyGalactic'>Infinitely Galactic</a></li>" +
-                            "<li><a href='https://www.youtube.com/@DistroTube'>DistroTube</a></li>";
+                            "<li><a href='https://www.youtube.com/@DistroTube'>DistroTube</a></li>" +
+                            "<li><a href='https://en.wikipedia.org/wiki/Linus_Torvalds'>Linus Torvalds</a></li>" +
+                            "<li><a href='https://en.wikipedia.org/wiki/Richard_Stallman'>Richard Stallman</a></li>" +
+                            "<li><a href='https://opensource.org/'> The Open Source Initiative </a></li>";
     } else {
       linksList.style.display = "none";
       linksList.innerHTML = ""; // Clear the list when hiding
