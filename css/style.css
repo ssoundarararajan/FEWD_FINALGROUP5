@@ -228,3 +228,7 @@ nav {
     display: block; /* Display the hamburger menu on smaller screens */
   }
 }
+
+#linksUnordered{
+  list-style-type: none;
+}
