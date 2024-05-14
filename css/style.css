@@ -78,6 +78,7 @@ body {
   margin-top: 20px;
   font-style: oblique;
   font-weight: bold;
+  list-style-type: none;
 }
 
 .passage {
@@ -231,4 +232,8 @@ nav {
 
 #linksUnordered{
   list-style-type: none;
+}
+
+copyright-text{
+  color: orange;
 }
