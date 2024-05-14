@@ -195,6 +195,11 @@ nav {
   margin: 5px 0;
 }
 
+.videoSize{
+  width:91%; 
+  height:350px;
+}
+
 /* Media Queries */
 
 /* Reset display property when screen resolution is greater than 768px */
@@ -202,6 +207,7 @@ nav {
   .nav-list {
     display: flex;
   }
+  
 }
 
 @media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
@@ -234,6 +240,6 @@ nav {
   list-style-type: none;
 }
 
-copyright-text{
+.copyright-text{
   color: orange;
 }
